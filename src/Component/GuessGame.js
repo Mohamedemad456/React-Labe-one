@@ -6,14 +6,21 @@ function GuessGame() {
   const [numberOfTries, setNumberOfTries] = useState(1);
   const [message, setMessage] = useState("");
   useEffect(() => {
-    // Function to generate a random number between min and max
+    // Function to generate a random number everytime the page refreshes
     setNumber(Math.floor(Math.random() * 100));
   }, []);
 
+
+  // To confirm that handling function is working
   console.log(number);
 
+
+  // Handling the guessed number 
   function handleGuess(e) {
+    // To prevent the Form from refreshing the page
     e.preventDefault();
+
+    //Converting the guess coming from input into integer
     const guess = parseInt(document.getElementById("guessId").value);
 
     if (numberOfTries < 5) {
@@ -25,6 +32,7 @@ function GuessGame() {
           document
             .getElementById("guessButton")
             .setAttribute("disabled", "true");
+            // Disabling the button after winning
         } else if (guess < number) {
           setMessage("The number is higher than your guess");
         } else {
@@ -46,6 +54,7 @@ function GuessGame() {
           `You lose. The number was ${number}. Please refresh to start again!`
         );
       }
+      // Disabling the button after the 5 tries
       document.getElementById("guessButton").setAttribute("disabled", "true");
     }
   }
