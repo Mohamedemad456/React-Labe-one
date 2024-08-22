@@ -5,7 +5,10 @@ import MyNavbar from "./Component/Navbar"; // Adjust the path if necessary
 import IncDecReset from "./Component/IncDecReset";
 import DetailsComponent from "./Component/DetailsComponent";
 import Counter from "./Component/Counter";
-import { Container } from "react-bootstrap";
+import Users from "./Component/Users";
+import Home from "./Component/Home";
+import Footer from "./Component/Footer"
+import GuessGame from "./Component/GuessGame"
 // import Home from './Home'
 // import Footer from './Footer';
 
@@ -13,9 +16,13 @@ function App() {
   return (
     <div>
       <MyNavbar />
+      {/* <Home />
       <IncDecReset />
       <DetailsComponent />
-      <Counter />
+      <Counter /> */}
+      {/* <Users /> */}
+      {/* <Footer /> */}
+      <GuessGame />
     </div>
   );
 }

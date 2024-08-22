@@ -1,6 +1,6 @@
 import React from "react";
-import img from "./image-1.jpg";
-import "./bootstrap.min.css";
+import img from "../image-1.jpg";
+import "../bootstrap.min.css";
 // import link from 'https://www.google.com/';
 function Home() {
   let title = "first";

@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Iphone 14",
+      "description": "A high-performance smartphone with a sleek design.",
+      "category": "Smart Phones"
+    },
+    {
+      "id": 2,
+      "name": "Iphone 13 Pro Max",
+      "description": "An affordable smartphone with a large screen.",
+      "category": "Smart Phones"
+    },
+    {
+      "id": 3,
+      "name": "Apple",
+      "description": "A powerful laptop for gaming and productivity.",
+      "category": "Laptops"
+    },
+    {
+      "id": 4,
+      "name": "DeLL",
+      "description": "A lightweight laptop ideal for students.",
+      "category": "Laptops"
+    }
+  ]
+}
