@@ -75,7 +75,7 @@ function GuessGame() {
               <strong>{message}</strong>
             </Alert>
           )}
-          <Form.Control type="number" id="guessId" required />
+          <Form.Control type="number" id="guessId" required min={0} max={100} />
         </Form.Group>
         <Button
           variant="primary"
