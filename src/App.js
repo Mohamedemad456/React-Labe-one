@@ -16,18 +16,21 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import NavLayout from "./Layout/NavLayout";
-import ProductDetails from "./Component/ProductDetails";
+import ProductDetails, { productDetailsLoader } from "./Component/ProductDetails";
 import Faq from "./Component/Faq";
 import HelpLayout from "./Layout/HelpLayout";
 import NotFound from "./Component/NotFound/NotFound";
 import ContactUs from "./Component/ContactUs";
+import ErrorComponent from "./Component/ErrorComponent/ErrorComponent";
+import CreateProdcut from './Component/CreateProduct';
+import { productListLoader } from "./Component/Users";
 // import Home from './Home'
 // import Footer from './Footer';
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<NavLayout />}>
-      <Route index element={<Users />} />
-      <Route path="/product/:id" element={<ProductDetails />} />
+    <Route path="/" element={<NavLayout /> } >
+      <Route index element={<Users />}  loader={productListLoader}  errorElement={<ErrorComponent />} />
+      <Route path="/product/:id" element={<ProductDetails />} loader={productDetailsLoader} errorElement={<ErrorComponent />} />
       <Route path="/help" element={<HelpLayout />}>
         {
           <>
@@ -36,6 +39,7 @@ const router = createBrowserRouter(
           </>
         }
       </Route>
+      <Route path="create" element={<CreateProdcut />} />
       <Route path="*" element={<NotFound />} />
     </Route>
   )

@@ -6,31 +6,38 @@
       "description": "A high-performance smartphone with a sleek design.",
       "category": "Smart Phones",
       "price": "1000$",
-      "image":"../assets/Iphone-14.jpg"
+      "image": "../assets/Iphone-14.jpg"
     },
     {
       "id": "2",
       "name": "Iphone 13 Pro Max",
       "description": "An affordable smartphone with a large screen.",
       "category": "Smart Phones",
-      "price":"1200$",
-      "image":"../assets/Iphone 13.jpg"
+      "price": "1200$",
+      "image": "../assets/Iphone 13.jpg"
     },
     {
       "id": "3",
       "name": "Apple",
       "description": "A powerful laptop for gaming and productivity.",
       "category": "Laptops",
-      "price":"2000$",
-      "image":"../assets/Mac.jpg"
+      "price": "2000$",
+      "image": "../assets/Mac.jpg"
     },
     {
       "id": "4",
       "name": "DeLL",
       "description": "A lightweight laptop ideal for students.",
       "category": "Laptops",
-      "price":"800$",
-      "image":"../assets/Dell.jpg"
+      "price": "800$",
+      "image": "../assets/Dell.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Lenovo",
+      "category": "Laptops",
+      "description": "Laptop",
+      "price": "1199.99"
     }
   ]
 }
